@@ -4,11 +4,9 @@
 
 # Env
 
-`
-conda create --name RepoName python=3.9                                       
-conda activate RepoName
-pip install -r requirements.txt
-`
+    conda create --name RepoName python=3.9
+    conda activate RepoName
+    pip install -r requirements.txt
 
 # Directory Setting
 
@@ -18,5 +16,5 @@ Model
 Config
 Tools
 Scripts
-out
+Out
 `
