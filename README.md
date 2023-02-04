@@ -48,3 +48,8 @@ v1.12.1
     pip install torch==1.12.0+cpu torchvision==0.13.0+cpu torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cpu
 
 https://pytorch.org/get-started/previous-versions/ 
+
+
+# Gcc complier
+
+    Please run command “scl enable devtoolset-9 bash”.  The absolute path of g++ 9 is “/opt/rh/devtoolset-9/root/bin/g++”
