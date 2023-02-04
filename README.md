@@ -67,3 +67,19 @@ https://pytorch.org/get-started/previous-versions/
 # Gcc complier
 
     Please run command “scl enable devtoolset-9 bash”.  The absolute path of g++ 9 is “/opt/rh/devtoolset-9/root/bin/g++”
+
+
+#Cmake issue
+
+    target_compile_features The compiler feature "cxx_std_17" is not known to
+    CXX compiler
+
+    "GNU"
+
+    version 4.8.5.
+
+    solution:
+    scl enable devtoolset-7 bash
+    cmake .. -DCMAKE_CXX_COMPILER=`which g++` -DCMAKE_C_COMPILER=`which gcc`
+
+    You may need to run the cmake command twice.
