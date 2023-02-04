@@ -8,6 +8,20 @@
     conda activate RepoName
     pip install -r requirements.txt
 
+
+# Conda env manipulate
+
+    The easiest way to save the packages from an environment to be installed in another computer is:
+
+    $ conda list -e > req.txt
+    then you can install the environment using
+
+    $ conda create -n <environment-name> --file req.txt
+    if you use pip, please use the following commands: reference https://pip.pypa.io/en/stable/reference/pip_freeze/
+
+    $ env1/bin/pip freeze > requirements.txt
+    $ env2/bin/pip install -r requirements.txt
+
 # Directory Setting
 
 `
