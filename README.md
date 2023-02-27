@@ -2,6 +2,9 @@
  
 #Github Repo Deployment
 
+# Run IPYNB
+    ipython -c "%run Use.ipynb"
+
 # Env
 
     conda create --name RepoName python=3.9
