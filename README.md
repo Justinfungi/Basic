@@ -1,6 +1,27 @@
 # Basic
- 
-#Github Repo Deployment
+
+# Connect jupyter in remote server
+
+    Launch Jupyter Notebook from remote server, selecting a port number for <PORT>:
+    # Replace <PORT> with your selected port number
+    ** jupyter notebook --no-browser --port=<PORT> **
+    For example, if you want to use port number 8080, you would run the following:
+
+    jupyter notebook --no-browser --port=8080
+    Or run the following command to launch with default port:
+
+    jupyter notebook --no-browser
+    Please note the port setting. You will need it in the next step.
+
+    You can access the notebook from your remote machine over SSH by setting up a SSH tunnel. Run the following command from your local machine:
+
+    # Replace <PORT> with the port number you selected in the above step
+    # Replace <REMOTE_USER> with the remote server username
+    # Replace <REMOTE_HOST> with your remote server address
+    ssh -L 8080:localhost:<PORT> <REMOTE_USER>@<REMOTE_HOST>
+
+
+# Github Repo Deployment
 
 # Run IPYNB
     ipython -c "%run Use.ipynb"
