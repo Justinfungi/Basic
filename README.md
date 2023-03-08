@@ -2,8 +2,9 @@
 
 # Use sftp to transfer file
 
-    "sftp your_cs_gpu_farm_account_name@IP_address", 
-    type in your password, then run "put xxxx .", where xxxx is the path
+    sftp account_name@IP_address 
+    password, 
+    put xxxx , where xxxx is the path
 
 # Connect jupyter in remote server
 
