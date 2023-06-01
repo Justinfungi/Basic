@@ -34,12 +34,12 @@
 
 # Env
 
-    conda create --name RepoName python=3.9
-    conda activate RepoName
+    conda create --name jusjus python=3.9
+    conda activate jusjus
     pip install -r requirements.txt
     pip3 install ipykernel
 
-    python -m ipykernel install --user --name mmcls
+    python -m ipykernel install --user --name jusjus
 
 # Conda env manipulate
 
