@@ -69,7 +69,7 @@ Out
 # pytorch compatibility
 
 v1.12.1
-###Conda
+### Conda
 
     # CUDA 10.2
     conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
@@ -79,8 +79,11 @@ v1.12.1
     conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch -c conda-forge
     # CPU Only
     conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cpuonly -c pytorch
+    
+    # Remove all env
+    for i in `conda env list|awk '{print $1}'|egrep -v 'base|#'|tr '\n' ' '`;do echo $i;conda env remove --name $i;done
 
-###pip
+### pip
 
     # ROCM 5.1.1 (Linux only)
     pip install torch==1.12.0+rocm5.1.1 torchvision==0.13.0+rocm5.1.1 torchaudio==0.12.0 --extra-index-url  https://download.pytorch.org/whl/rocm5.1.1
@@ -105,6 +108,8 @@ https://pytorch.org/get-started/previous-versions/
 
     target_compile_features The compiler feature "cxx_std_17" is not known to
     CXX compiler
+    
+    
 
     "GNU"
 
