@@ -1,12 +1,14 @@
 # Basic
 
-# Use sftp to transfer file
+## Remote server and Local server
+
+### Use sftp to transfer file
 
     sftp account_name@IP_address 
     password, 
     put xxxx , where xxxx is the path
 
-# Connect jupyter in remote server
+### Connect jupyter in remote server
 
     Launch Jupyter Notebook from remote server, selecting a port number for <PORT>:
     # Replace <PORT> with your selected port number
@@ -27,12 +29,24 @@
     ssh -L 8080:localhost:<PORT> <REMOTE_USER>@<REMOTE_HOST>
 
 
-# Github Repo Deployment
 
-# Run IPYNB
+## Github Repo Deployment
+
+### Run IPYNB
     ipython -c "%run Use.ipynb"
+    
+# Directory Setting
+`
+Data
+Model
+Config
+Tools
+Scripts
+Out
+`
 
-# Env
+## Conda Usage
+### Env install
 
     conda create --name jusjus python=3.9
     conda activate jusjus
@@ -41,7 +55,7 @@
 
     python -m ipykernel install --user --name jusjus
 
-# Conda env manipulate
+### Conda env manipulate
 
     The easiest way to save the packages from an environment to be installed in another computer is:
 
@@ -53,17 +67,27 @@
 
     $ env1/bin/pip freeze > requirements.txt
     $ env2/bin/pip install -r requirements.txt
+    
+### Install requirement.txt by conda
+    
+    ``` bash
+    conda uses an environment.yaml file instead of requirements.txt, but you can include one in the other:
 
-# Directory Setting
+    # environment.yaml
 
-`
-Data
-Model
-Config
-Tools
-Scripts
-Out
-`
+    name: test-env
+    channels:
+      - conda-forge
+    dependencies:
+      - python>=3.5
+      - anaconda
+      - pip
+      - pip:
+        - -r file:requirements.txt
+    Then use conda to create the environment via
+
+    conda env create -f environment.yaml
+    ```
 
 
 # pytorch compatibility
@@ -99,12 +123,12 @@ v1.12.1
 https://pytorch.org/get-started/previous-versions/ 
 
 
-# Gcc complier
+## Gcc complier
 
     Please run command “scl enable devtoolset-9 bash”.  The absolute path of g++ 9 is “/opt/rh/devtoolset-9/root/bin/g++”
 
 
-#Cmake issue
+### Cmake issue
 
     target_compile_features The compiler feature "cxx_std_17" is not known to
     CXX compiler
