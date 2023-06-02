@@ -68,6 +68,9 @@ Out
     $ env1/bin/pip freeze > requirements.txt
     $ env2/bin/pip install -r requirements.txt
     
+### Env delete
+    conda remove --name ENV_NAME --all
+    
 ### Install requirement.txt by conda
     
     ``` bash
