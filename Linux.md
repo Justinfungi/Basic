@@ -30,3 +30,11 @@
     每年定时执行一次	0 0 1 1 *
 
     service cron status/start
+
+### Colab to remote server
+
+    !tar -czvf files.tar.gz /path/to/your/file
+
+    scp files.tar.gz <REMOTE_USER>@<REMOTE_HOST>:<REMOTE_DIRECTORY>
+    
+    tar -xzvf /path/to/files.tar.gz
