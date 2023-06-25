@@ -2,6 +2,9 @@
 
 ## Remote server and Local server
 
+kill -9 $(lsof -t -i:8080)
+
+
 ### Use sftp to transfer file
 
     sftp account_name@IP_address 
