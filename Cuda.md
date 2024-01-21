@@ -4,12 +4,13 @@
 
 Cuda version limit the usage of the torch installation. Need to check
 
-    cat /usr/local/cuda/version.txt
+    Cuda version:       cat /usr/local/cuda/version.txt
+    Architecture:       uname -m
+    Linux distribution: lsb_release -a
 
-### Conda
-### pip
 
-https://pytorch.org/get-started/previous-versions/
+
+Conda  or  pip: https://pytorch.org/get-started/previous-versions/
 
 ### CUDA Mem
 
