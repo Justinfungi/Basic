@@ -4,6 +4,8 @@
 
 Cuda version limit the usage of the torch installation. Need to check
 
+    cat /usr/local/cuda/version.txt
+
 ### Conda
 ### pip
 
