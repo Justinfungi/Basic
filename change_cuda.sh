@@ -10,11 +10,11 @@ fi
 cuda_version=$1
 
 # Set the CUDA environment variables
-export PATH="/usr/local/cuda-$cuda_version/bin:$PATH"
-export LD_LIBRARY_PATH="/usr/local/cuda-$cuda_version/lib64:$LD_LIBRARY_PATH"
+export PATH=/usr/local/cuda-$cuda_version/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-$cuda_version/lib64
 
 # Source the .bashrc file to ensure the changes take effect
-source ~/.bashrc
+source .bashrc
 
 # Perform your tasks here
 # ...
