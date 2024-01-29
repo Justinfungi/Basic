@@ -6,7 +6,7 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
-# Read CUDA version from command-line argument
+# Read CUDA version from the command-line argument
 cuda_version=$1
 
 # Set the CUDA environment variables
@@ -15,6 +15,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-$cuda_version/lib64
 
 # Source the .bashrc file to ensure the changes take effect
 source .bashrc
+source "$HOME/.bashrc"
 
 # Perform your tasks here
 # ...
