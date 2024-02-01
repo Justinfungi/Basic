@@ -4,13 +4,34 @@
 
 Cuda version limit the usage of the torch installation. Need to check
 
-    Cuda version:       cat /usr/local/cuda/version.txt
+    Cuda version:       ls /usr/local
     Architecture:       uname -m
     Linux distribution: lsb_release -a
+
+    Check current cuda version:           nvcc --version
+    Check current cuda support which GPU: nvcc --list-gpu-arch
 
 
 
 Conda  or  pip: https://pytorch.org/get-started/previous-versions/
+
+## Cuda to .bashrc
+
+    # example for 11.7
+    export PATH="/usr/local/cuda-11.7/bin:$PATH"
+    export LD_LIBRARY_PATH="/usr/local/cuda-11.7/lib64:$LD_LIBRARY_PATH"  
+    
+    Permanent: Add these two lines to the end of ~/.bashrc
+    
+    Refresh the setting: source ~/.bashrc
+
+## Error Summary:
+### nvcc fatal, unsupported gpu archi
+
+nvcc fatal   : Unsupported gpu architecture 'compute_89'
+
+cuda toolkit is not advanced enough to supportt new GPU ==> use higher version cuda
+eg. RTX4090 is not supported by cuda11.7
 
 ### CUDA Mem
 
