@@ -38,3 +38,16 @@
     scp files.tar.gz <REMOTE_USER>@<REMOTE_HOST>:<REMOTE_DIRECTORY>
     
     tar -xzvf /path/to/files.tar.gz
+
+### Storage
+
+    du -h -d 1
+    df -h
+    rm -rf ~/.local/*
+    rm -rf ~/.cache/*
+
+Local:
+The local directory typically contains configuration files and data for applications that are installed on the system. This can include things like browser history, application preferences, and temporary files.
+
+Cache:
+The cache directory typically contains temporary files that are used to speed up the loading of websites and applications. This can include things like images, videos, and scripts.
