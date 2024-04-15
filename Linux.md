@@ -36,6 +36,7 @@
     !tar -czvf files.tar.gz /path/to/your/file
 
     scp files.tar.gz <REMOTE_USER>@<REMOTE_HOST>:<REMOTE_DIRECTORY>
+    scp /home/fish/Downloads/*.pkl znzz-ai-lab-a800@xxxx:/root/IDE-3D/
     
     tar -xzvf /path/to/files.tar.gz
 
