@@ -31,7 +31,8 @@ kill -9 $(lsof -t -i:8080)
     # Replace <REMOTE_HOST> with your remote server address
     ssh -L 8080:localhost:<PORT> <REMOTE_USER>@<REMOTE_HOST>
 
-
+### Public IP
+    curl ifconfig.me
 
 ## Github Repo Deployment
 
