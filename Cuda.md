@@ -15,11 +15,17 @@ Cuda version limit the usage of the torch installation. Need to check
 
 Conda  or  pip: https://pytorch.org/get-started/previous-versions/
 
+## NVIDIA DRIVER
+    A driver of version at least 530.00 is required for CUDA 12.1 functionality to work.    
+
 ## Cuda to .bashrc
 
     # example for 11.7
     export PATH="/usr/local/cuda-11.7/bin:$PATH"
     export LD_LIBRARY_PATH="/usr/local/cuda-11.7/lib64:$LD_LIBRARY_PATH"  
+    
+    export PATH="/usr/local/cuda-11.8/bin:$PATH"
+    export LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64:$LD_LIBRARY_PATH"  
     
     Permanent: Add these two lines to the end of ~/.bashrc
     
