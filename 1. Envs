@@ -1,0 +1,5 @@
+virtualenv <env_name>
+source <env_name>/bin/activate
+
+pipreqs ./ --ignore <folder> --encoding=utf8 --force
+pip install -r requirements.txt
