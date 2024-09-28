@@ -1,0 +1,4 @@
+Discard all uncomitted changes 
+
+git reset --hard
+git clean -fd
