@@ -1,4 +1,20 @@
-Discard all uncomitted changes 
+### Add changes
+
+  git add .  
+
+### Commit
+
+  git commit -m ""
+
+### Push
+
+  git push origin main
+
+### Pull
+
+  git pull origin
+
+### Discard all uncomitted changes 
 
 git reset --hard
 git clean -fd
