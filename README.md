@@ -72,6 +72,8 @@ Out
     $ env1/bin/pip freeze > requirements.txt
     $ env2/bin/pip install -r requirements.txt
 
+    conda env create -f environment.yaml -p /userhome/cs3/fung0311/envs/paint3d1
+
 ### Env delete
     conda remove --name ENV_NAME --all
 
