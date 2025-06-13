@@ -1,0 +1,34 @@
+
+### Docker in aliyun
+
+```
+{
+  "registry-mirrors": [
+    "https://docker.1panelproxy.com",
+    "https://2m11665s.mirror.aliyuncs.com",
+    "https://registry.docker-cn.com",
+    "https://dockerhub.azk8s.cn",
+    "https://docker.mirrors.ustc.edu.cn",
+    "http://hub-mirror.c.163.com",
+    "https://k8s.gcr.io",
+    "https://github-releases.githubusercontent.com",
+    "https://ustc-edu-cn.mirror.aliyuncs.com"
+  ],
+  "insecure-registries": [
+    "registry.me:5000",
+    "http://docker.mirrors.ustc.edu.cn",
+    "https://k8s.gcr.io",
+    "https://github-releases.githubusercontent.com",
+    "https://registry-1.docker.io",
+    "decs.com"
+  ],
+  "exec-opts": [
+    "native.cgroupdriver=systemd"
+  ]
+}```
+
+```
+systemctl daemon-reload
+systemctl restart docker
+
+```
